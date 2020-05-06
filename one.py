@@ -5,7 +5,7 @@
     Try running it on some samples to make sure it works
 """
 def checkisPallendrome(text):
-    result = (text.replace(" ", "") == (text.replace(" ", ""))[::-1])
+    result = (text.replace(" ", "").lower() == (text.replace(" ", "").lower)[::-1])
     return result
 
 def tester(text, expected_result):
